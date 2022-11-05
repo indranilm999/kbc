@@ -1,0 +1,528 @@
+
+.App-logo{
+  position: relative;
+  height: 900px;
+  width: 1200px;
+}
+
+.timer{
+  color: white;
+  position: relative;
+  top: -364px;
+  left: 600px;
+}
+
+.App-logo2{
+  position: relative;
+  height: 900px;
+  width: 1200px;
+  transform: translate(0,0);
+  opacity: 0;
+  -webkit-animation: blink 0.05s infinite 0.05s none, vertical 0.5s ease-in-out infinite 0.05s alternate;
+  animation: blink 0.05s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+  margin: 0 auto;
+}
+
+.App-logo3{
+  position: relative;
+  height: 900px;
+  width: 1200px;
+}
+
+@-webkit-keyframes blink {
+  0% {opacity: .2;}
+  50% {opacity: 1;}
+  100% {opacity: .2;}
+}
+@keyframes blink {
+  0% {opacity: .2;}
+  50% {opacity: 1;}
+  100% {opacity: .2;}
+}
+
+@-webkit-keyframes vertical {
+  0% {transform:translateY(-5px);}
+  100% {transform:translateY(  0px);}
+}
+@keyframes vertical {
+  0% {transform:translateY(-5px);}
+  100% {transform:translateY(  0px);}
+}
+.game-mode1{
+  position: relative;
+  width: 400px;
+  top: -600px;
+  left: 200px;
+}
+
+.game-mode1:hover{
+  width:410px;
+  cursor: pointer;
+}
+
+.game-mode2{
+  top: -601px;
+  position: relative;
+  width: 400px;
+  left: 357px;
+}
+
+
+.game-mode2:hover{
+  width:410px;
+  cursor: pointer;
+}
+
+.hiddenText{
+  visibility: hidden;
+  color: white;
+}
+
+.outer:hover .hiddenText{
+  display:block;
+  visibility: visible;
+}
+
+
+.life1{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -375px;
+  left: 500px;
+  opacity: 0;
+  /* -webkit-animation: blink 0.05s infinite 0.05s none, vertical 0.5s ease-in-out infinite 0.05s alternate; */
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+  /* margin: 0 auto; */
+}
+.life2{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -405px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life3{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -435px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life4{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -465px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life5{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -500px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life6{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -540px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life7{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -570px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life8{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -600px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life9{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -630px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life10{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -660px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life11{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -690px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life12{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -720px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life13{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -750px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+.life14{
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -785px;
+  left: 500px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+
+.lost{
+  position: relative;
+  bottom: 672px;
+  left: 439px;
+  animation: blink 2s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+}
+
+ body {
+  max-height: 400px;
+ width: 1000px;
+ background-color: #282c34;
+ }
+ .emptyScreen{
+  position: relative;
+  bottom: 300px;
+  width: 1200px;
+  transform: translate(0,0);
+ }
+
+ .Question {
+  position: relative;
+  bottom: 500px;
+  color: white;
+  left:200px;
+}
+
+.optionA {
+  position: relative;
+  bottom: 444px;
+  color: white;
+  left: 200px;
+}
+.optionA:hover{
+  color: #4CAF50;
+}
+
+.optionB {
+  position: relative;
+  bottom: 466px;
+  color: white;
+  left: 700px;
+}
+
+.optionB:hover{
+  color: #4CAF50;
+}
+.optionC {
+  position: relative;
+  bottom: 415px;
+  color: white;
+  left: 200px;
+}
+
+.optionC:hover{
+  color: #4CAF50;
+}
+.optionD {
+  position: relative;
+  bottom: 430px;
+  color: white;
+  left: 700px;
+}
+
+.optionD:hover{
+  color: #4CAF50;
+}
+
+.optionA:active {
+  position: relative;
+  bottom: 444px;
+  color: white;
+  left: 200px;
+  background-color: #4CAF50;
+}
+
+.optionB:active {
+  position: relative;
+  bottom: 466px;
+  color: white;
+  left: 700px;
+  background-color: #4CAF50;
+}
+
+
+.optionC:active {
+  position: relative;
+  bottom: 415px;
+  color: white;
+  left: 200px;
+  background-color: #4CAF50;
+}
+
+.optionD:active {
+  position: relative;
+  bottom: 430px;
+  color: white;
+  left: 700px;
+  background-color: #4CAF50;
+}
+
+.optionAW{
+  position: relative;
+  bottom: 444px;
+  color: white;
+  left: 200px;
+}
+.optionAW:hover{
+ 
+  color: #4CAF50;
+ 
+}
+
+.optionBW{
+  position: relative;
+  bottom: 466px;
+  color: white;
+  left: 700px;
+}
+.optionBW:hover{
+  
+  color: #4CAF50;
+ 
+}
+
+.optionCW{
+  position: relative;
+  bottom: 415px;
+  color: white;
+  left: 200px;
+}
+.optionCW:hover{
+  color: #4CAF50;
+}
+
+.optionDW{
+  position: relative;
+  bottom: 430px;
+  color: white;
+  left: 700px;
+ }
+ .optionDW:hover{
+  color: #4CAF50;
+ }
+
+.optionAW:active{
+  position: relative;
+  bottom: 444px;
+  color: white;
+  background-color: red;
+  left: 200px;
+}
+
+.optionBW:active{
+  position: relative;
+  bottom: 466px;
+  color: white;
+  left: 700px;
+  background-color: red;
+}
+
+.optionCW:active{
+  position: relative;
+  bottom: 415px;
+  color: white;
+  left: 200px;
+  background-color: red;
+}
+
+.optionDW:active{
+  position: relative;
+  bottom: 430px;
+  color: white;
+  left: 700px;
+  background-color: red;
+}
+
+button{
+position: relative;
+bottom:200px;
+left:500px;
+margin:5px;
+background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* border: 1px solid white; */
+ }
+ button:hover{
+  background-color:darkgreen;
+  cursor: pointer;
+  border: 1px solid white;
+ }
+
+ .btn2{
+  position: relative;
+  bottom:400px;
+  left:-220px;
+  margin:5px;
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   }
+   .btn2:hover{
+    background-color:darkgreen;
+    cursor: pointer;
+   }
+
+ .Continue{
+  position: relative;
+  bottom:200px;
+  left:500px;
+  margin:5px;
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+ }
+
+ .Exit{
+  position: relative;
+  bottom:200px;
+  bottom: 526px;
+  left:500px;
+  margin:5px;
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+ }
+
+ .prompt{
+  position: relative;
+  color:white;
+  bottom:272px;
+  left:170px;
+ }
+
+ .prompt:hover{
+  color: #4CAF50;
+ }
+
+ .prompt_continue{
+  position: relative;
+  color:white;
+  bottom: 635px;
+  left: 247px;
+  font-size: large;
+ }
+
+ .prompt_continue:hover{
+  color: #4CAF50;
+ }
+
+ .prompt_exit{
+  position: relative;
+  color:white;
+  bottom:657px;
+ left: 739px;
+ font-size: large;
+ }
+ .prompt_exit:hover{
+  color:rgb(225, 7, 7);
+ }
+
+ .prompt_continue_final{
+  position: relative;
+  color:white;
+  bottom: 542px;
+  left: 247px;
+  font-size: large;
+ }
+ .prompt_exit_final{
+  position: relative;
+  color:white;
+  bottom:562px;
+ left: 739px;
+ font-size: large;
+ }
+
+ .prompt_continue_final:hover{
+  color: #4CAF50;
+ }
+
+ .prompt_exit_final:hover{
+  color:rgb(225, 7, 7);
+ }
+ .life_final{
+  position: relative;
+  bottom: 580px;
+  left: 439px;
+  opacity: 0;
+  animation: blink 0.05s infinite 0.05s none, vertical 1s ease-in-out infinite 0.05s alternate;
+ }
+
+ .prize{
+  position: relative;
+    bottom: 700px;
+    left: 553px;
+    color: white;
+    font-family: cursive;
+ }
+
+ .prize_final{
+  position: relative;
+    bottom: 594px;
+    left: 507px;
+    color: white;
+    font-family: cursive;
+ }
