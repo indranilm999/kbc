@@ -78,16 +78,18 @@ function App() {
   return (
     <div>
     <div className='Question'>{questionNo}. {qBank[0]}</div>
-    <div style={{cursor:'pointer'}} onClick={(e)=>ValidateAnswer(questionNo,e)} className={correctOption==='A'?'optionA':'optionAW'}> {qBank[1]}</div>
-    <div style={{cursor:'pointer'}} onClick={(e)=>ValidateAnswer(questionNo,e)} className={correctOption==='B'?'optionB':'optionBW'}> {qBank[2]}</div>
-    <div style={{cursor:'pointer'}} onClick={(e)=>ValidateAnswer(questionNo,e)} className={correctOption==='C'?'optionC':'optionCW'}> {qBank[3]}</div>
-    <div style={{cursor:'pointer'}} onClick={(e)=>ValidateAnswer(questionNo,e)} className={correctOption==='D'?'optionD':'optionDW'}> {qBank[4]}</div>
+    <div style={{cursor:'pointer', width:'350px'}} onClick={(e)=>ValidateAnswer(questionNo,e)} className={correctOption==='A'?'optionA':'optionAW'}> {qBank[1]}</div>
+    <div style={{cursor:'pointer', width:'350px'}} onClick={(e)=>ValidateAnswer(questionNo,e)} className={correctOption==='B'?'optionB':'optionBW'}> {qBank[2]}</div>
+    <div style={{cursor:'pointer', width:'350px'}} onClick={(e)=>ValidateAnswer(questionNo,e)} className={correctOption==='C'?'optionC':'optionCW'}> {qBank[3]}</div>
+    <div style={{cursor:'pointer', width:'350px'}} onClick={(e)=>ValidateAnswer(questionNo,e)} className={correctOption==='D'?'optionD':'optionDW'}> {qBank[4]}</div>
     </div>
     )
   }
 
 
    function Opening(){
+    setTimer(30);
+    setFlag(true)
     BGaudio.play();
     return(
     <div className="App">
@@ -130,7 +132,8 @@ function App() {
       
       async function time (){
         clockAudio.play();
-      await new Promise(resolve => setTimeout(resolve, 1000));  
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      if(timer>0)  
       setTimer((timer)=>timer-1);
     };
     if(flag && timer>0)
@@ -180,7 +183,7 @@ function App() {
       
       <div>
       <div className='prize_final'>${`You have won Rs. `+prize_won}</div>
-      <div style={{cursor:'pointer'}} onClick={()=>{setSteps(1)}} className='prompt_continue_final'>Continue </div>
+      <div style={{cursor:'pointer'}} onClick={()=>{setSteps(2)}} className='prompt_continue_final'>Continue </div>
       <div style={{cursor:'pointer'}} onClick={()=>{setSteps(0)}} className='prompt_exit_final'>Exit </div>
       
       </div>
